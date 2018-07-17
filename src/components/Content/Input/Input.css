@@ -1,7 +1,26 @@
-.content label {
+.input {
+  display: block;
+  text-align: start;
+  margin: auto;
+}
+
+.input label {
+  display: block;
   padding: 5px;
+}
+
+.input * {
+  margin: 5px;
 }
 
 .input-submit {
   margin: 10px;
+}
+
+.input-hided {
+  display: none
+}
+
+.input-dunger {
+  color: red;
 }

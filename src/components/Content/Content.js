@@ -18,6 +18,7 @@ class Content extends Component {
   submitHandler = (payload) => {
     let users = [...this.state.users];
     delete payload.edit;
+    delete payload.validate;
     users.push(payload)
     this.setState({users, edit: false, editContent: {}}, function () {
       localStorage.setItem('users', JSON.stringify(this.state.users))
@@ -28,6 +29,7 @@ class Content extends Component {
     let newState = this.state.users.map(item => {
       if (item.id === payload.id) {
         delete payload.edit;
+        delete payload.validate;
         return payload;
       } else {
         return item
