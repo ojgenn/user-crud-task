@@ -5,8 +5,7 @@ class UserList extends Component {
   render() {
     return (
       <div>
-        UserList
-         <UserItem />
+          {this.props.users.map((item, index) => <UserItem key = {index} user = {item}/>)}
       </div>
     );
   }

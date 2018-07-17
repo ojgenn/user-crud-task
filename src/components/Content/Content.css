@@ -2,4 +2,5 @@
     width: var(--screen-width);
     min-width: var(--min-screen-width);
     padding: 10px;
+    margin: auto;
 }
