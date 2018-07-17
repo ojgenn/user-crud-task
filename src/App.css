@@ -1,5 +1,6 @@
 :root {
   --main-background: #303F9F;
+  --link-color: rgba(46,63,179, 0.6);
   --main-font-color: #ffffff;
   --screen-width: 1200px;
   --min-screen-width: 960px;
@@ -7,7 +8,6 @@
 
 .App {
   text-align: center;
-  font-family: 'Roboto';
 }
 
 .App-logo {

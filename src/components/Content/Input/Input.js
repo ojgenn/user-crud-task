@@ -17,7 +17,9 @@ class Input extends Component {
   }
 
   handleSubmit(event) {
-    this.props.submitHandler(this.state)
+    let state = {...this.state};
+    state.id = new Date().getTime();
+    this.props.submitHandler(state)
     this.setState({
       fio: '',
       day: '',
