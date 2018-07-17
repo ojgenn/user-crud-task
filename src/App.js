@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import './App.css';
 import Header from './components/Header/Header';
 import Content from './components/Content/Content';
@@ -8,7 +8,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header/>
-        <Content />
+        <Content/>
       </div>
     );
   }

@@ -1,15 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 import UserItem from './UserItem/UserItem';
 import './UserList.css';
 
-class UserList extends Component {
-  render() {
-    return (
-      <div className = {'user-list'}>
-          {this.props.users.map((item, index) => <UserItem key = {item.id} user = {item} deleteItem = {this.props.deleteItem}/>)}
-      </div>
-    );
-  }
-}
+const userList = props => {
+  return (
+    <div className={'user-list'}>
+      {props.users.map(item => <UserItem key={item.id} user={item} deleteItem={props.deleteItem}
+                                         editItem={props.editItem}/>)}
+    </div>
+  );
+};
 
-export default UserList;
+export default userList;
